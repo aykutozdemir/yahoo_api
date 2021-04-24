@@ -1,0 +1,16 @@
+#include <com/sun/star/uno/XInterface.idl>
+
+module com { module stock { module api { module yahoo {
+
+    interface XStockYahoo {
+        double YAHOOPRICE( [in] string symbol );
+        
+        double YAHOOHIGHPRICE( [in] string symbol );
+        
+        double YAHOOLOWPRICE( [in] string symbol );
+        
+        double YAHOOVOLUME( [in] string symbol );
+        
+    };
+
+}; }; }; };
